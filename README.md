@@ -15,7 +15,7 @@ Z-Offset guide: https://www.youtube.com/watch?v=y_1Kg45APko
 
 
 
-## If i've helped at all, please feel free to grab me a coffee! And don't foget to donate to Marlin! :D
+If i've helped at all, please feel free to grab me a coffee! And don't foget to donate to Marlin! :D
 
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/JLDesigns"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
 
