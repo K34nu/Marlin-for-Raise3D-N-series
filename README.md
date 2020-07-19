@@ -19,7 +19,9 @@ If i've helped at all, please feel free to grab me a coffee! And don't foget to 
 
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/JLDesigns"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
 
+# PLEASE NOTE
 
+This is a modified version of this source: https://github.com/ABH10/Marlin-for-Raise3D-N-series/tree/1.1.x_bf_Raise3D I in no way take credit for ABH's hard work as without them, this wouldn't be possible. So please make sure to thank them aswell!
 
 ## License
 
