@@ -109,17 +109,17 @@
 
 /*=====Raise3D modified======*/
 #define N_SERIES_PROTOCOL
-//#define N1
-#define N2
+#define N1
+//#define N2
 //#define N2PLUS
-#define DUAL            //Un-comment this line to get dual head version firmware.
-//#define BONDTECH_MINI   //Un-comment this line to get Bondtech extruder firmware (can be combined with DUAL).
-//#define BONDTECH_BMG    //Un-comment this line to get Bondtech BMG extruder firmware (can be combined with DUAL).
+//#define DUAL            //Un-comment this line to get dual head version firmware.
+#define BONDTECH_MINI   //Un-comment this line to get Bondtech extruder firmware (can be combined with DUAL).
+//#define BONDTECH_BMG    //Un-comment this line to get Bondtech Mini Geared (BMG) extruder firmware (can be combined with DUAL).
 
-//#define ABH_RUNOUT_SENSOR
-//#define ABH_HOTEND
-//#define ABH_Y_SIZE_EXTENSION
-//#define ABH_NO_GRAPHIC_CONTROLLER
+#define ABH_RUNOUT_SENSOR
+#define ABH_HOTEND
+#define ABH_BED_EXTENSION
+#define ABH_NO_GRAPHIC_CONTROLLER
 
 /**
  * This setting determines the communication speed of the printer.
@@ -933,8 +933,13 @@ const bool E1_LACK_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
 // The size of the print bed
 #ifdef N1
+#ifdef ABH_BED_EXTENSION
+#define X_BED_SIZE 210
+#define Y_BED_SIZE 215
+#else
 #define X_BED_SIZE 205
 #define Y_BED_SIZE 205
+#endif
 #define Z_MAX_POS  205
 #endif
 
@@ -953,13 +958,7 @@ const bool E1_LACK_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-
-#ifdef ABH_Y_SIZE_EXTENSION
-  #define Y_MIN_POS -10  // To tell Marvin that the Y-axis microswitch is moved 10 mm towards the front
-#else
-  #define Y_MIN_POS 0
-#endif
-
+#define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
