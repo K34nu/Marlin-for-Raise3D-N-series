@@ -109,17 +109,17 @@
 
 /*=====Raise3D modified======*/
 #define N_SERIES_PROTOCOL
-#define N1
-//#define N2
+//#define N1
+#define N2
 //#define N2PLUS
-//#define DUAL            //Un-comment this line to get dual head version firmware.
+#define DUAL            //Un-comment this line to get dual head version firmware.
 #define BONDTECH_MINI   //Un-comment this line to get Bondtech extruder firmware (can be combined with DUAL).
 //#define BONDTECH_BMG    //Un-comment this line to get Bondtech Mini Geared (BMG) extruder firmware (can be combined with DUAL).
 
 #define ABH_RUNOUT_SENSOR
-#define ABH_HOTEND
-#define ABH_BED_EXTENSION
-#define ABH_NO_GRAPHIC_CONTROLLER
+//#define ABH_HOTEND
+//#define ABH_BED_EXTENSION
+//#define ABH_NO_GRAPHIC_CONTROLLER
 
 /**
  * This setting determines the communication speed of the printer.
